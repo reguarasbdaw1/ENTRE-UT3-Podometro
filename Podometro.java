@@ -24,7 +24,6 @@ public class Podometro {
     private int tiempo;
     private int caminatasNoche;
 
-    
     /**
      * Inicializa el podómetro con la marca indicada por el parámetro.
      * El resto de atributos se ponen a 0 y el sexo, por defecto, es mujer
@@ -42,6 +41,7 @@ public class Podometro {
         caminatasNoche = 0;
 
     }
+
     /**
      * accesor para la marca
      *  
@@ -50,6 +50,7 @@ public class Podometro {
         return marca;
 
     }
+
     /**
      * Simula la configuración del podómetro.
      * Recibe como parámetros la altura y el sexo de una persona
@@ -121,29 +122,33 @@ public class Podometro {
         System.out.println();
 
     }
-    // /**
-    // * Muestra en pantalla información acerca de la distancia recorrida,
-    // * pasos, tiempo total caminado, ....
-    // * 
-    // * (leer enunciado)
-    // *  
-    // */
-    // public void printEstadísticas() 
-    // {
-    // int totalPasosSabado = pasos += totalPasosSabado;
-    // System.out.println("Distancia recorrida toda la semana"+ totalDistanciaSemana+ "\nDistancia recorrida fin de semana"+ totalDistanciaFinSemana);
-    // System.out.println("Nº pasos dias laborables"+ totalPasosLaborables +"\n pasos Sabado:");
 
-    // }
+    /**
+     * Muestra en pantalla información acerca de la distancia recorrida,
+     * pasos, tiempo total caminado, ....
+     * 
+     * (leer enunciado)
+     *  
+     */
+    public void printEstadísticas() 
+    {
+        System.out.println("Distancia recorrida toda la semana:"+ totalDistanciaSemana+ "\nDistancia recorrida fin de semana:"+ totalDistanciaFinSemana);
+        System.out.println("Nº pasos dias laborables:"+ totalPasosLaborables +"\n pasos Sabado:");
+        System.out.println("Nº pasos Domingo:"+ totalPasosDomingo);
+        System.out.println("Nº caminatas realizadas a partir de las 21h:"+ caminatasNoche);
+        System.out.println("Tiempo total caminado en la semana:"+ tiempo);
+        System.out.println("Dia/s con mas pasos caminados:");
 
-    // /**
-    // *  Calcula y devuelve un String que representa el nombre del día
-    // *  en el que se ha caminado más pasos - "SÁBADO"   "DOMINGO" o  "LABORABLES"
-    // */
-    // public String diaMayorNumeroPasos() {
+    }
 
-        
-    // }
+    /**
+     *  Calcula y devuelve un String que representa el nombre del día
+     *  en el que se ha caminado más pasos - "SÁBADO"   "DOMINGO" o  "LABORABLES"
+     */
+    public String diaMayorNumeroPasos() {
+
+    }
+
     /**
      * Restablecer los valores iniciales del podómetro
      * Todos los atributos se ponen a cero salvo el sexo
